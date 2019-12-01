@@ -5,7 +5,7 @@ import Form from './components/Form/Form';
 const initialStateItems = [
   {
     image:
-      "https://learnreduxwithdanabramov.com/static/dan-abramov-photo.png",
+      "https://media.simplecast.com/episode/image/159108/small_1531930160-artwork.jpg",
     name: "Dan Abramov",
     description: "The creator of React",
     twitterLink: "https://twitter.com/dan_abramov"
