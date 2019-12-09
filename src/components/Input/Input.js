@@ -3,7 +3,7 @@ import styles from './Input.module.scss';
 import PropTypes from 'prop-types'
 
 
-const Input = ({tag: Tag, name, label, maxLength, required}) => (
+const Input = ({tag: Tag, name, label, maxLength,...props}) => (
     <div className={styles.formItem}>
         <Tag
             className={Tag === 'textarea' ? styles.textarea : styles.input}
@@ -12,7 +12,8 @@ const Input = ({tag: Tag, name, label, maxLength, required}) => (
             id={name}
             placeholder=" "
             maxLength={maxLength}
-            required={required}
+            
+            {...props}
         />
         <label className={styles.label} htmlFor={name}>{label}</label>
         <div className={styles.formItemBar}></div>
